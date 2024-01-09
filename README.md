@@ -1,6 +1,6 @@
-- 👋 Hi, I’m Abid Tondi
-- 👀 I’m interested in Frontend & Backend Website, Frontend Mobile
-- 🌱 I’m currently learning ...
+- 👋 Hi, I’m Abid Tondi Nugraha
+- 👀 I’m interested in Frontend & Backend Website, Frontend Mobile & Machine Learning
+- 🌱 I’m currently learning pyhton and data analyst
 - 💞️ I’m looking to collaborate on ...
 - 📫 How to reach me ...
 
