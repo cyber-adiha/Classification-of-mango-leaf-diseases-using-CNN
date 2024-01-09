@@ -1,8 +1,6 @@
-- 👋 Hi, I’m Abid Tondi Nugraha
-- 👀 I’m interested in Frontend & Backend Website, Frontend Mobile & Machine Learning
-- 🌱 I’m currently learning pyhton and data analyst
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
+in file app.py, change 'model3.h5' with your model name in one folder
+
+i use folder 'images' in public/static for classification images, so place your mango leaf image in that folder
 
 <!---
 cyber-adiha/cyber-adiha is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
