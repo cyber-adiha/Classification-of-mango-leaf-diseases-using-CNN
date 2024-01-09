@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- basic -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- site metas -->
+<title>Deteksi</title>
+<link rel="stylesheet" href="../public/css/bootstrap.min.css">
+<!-- style css -->
+<link rel="stylesheet" href="../public/css/style.css">
+<!-- Tweaks for older IEs-->
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+<!-- owl stylesheets --> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+</head>
+<body>
+	<!-- header start-->
+	<header>
+        <a class="logo" href="#"><img src="../public/images/logo baru fasilkom-ti-modified.png" width="70"></a>
+            <ul>
+                <li>
+                   <a href="../public/index.html">BERANDA</a>
+                </li>
+                <li>
+                   <a href="../public/deteksi.html" class="active">DETEKSI</a>
+                </li>
+                 <li>
+                   <a href="../public/bantuan.html">BANTUAN</a>
+                </li>
+                <li> 
+                   <a href="../public/tentang.html">TENTANG</a>
+                </li>
+            </ul>
+  </header>
+  <!-- header end-->
+
+  <!-- section start-->
+  <section class="latar" style="height: 90vh;">
+    <div class="container" style="padding-top: 200px">
+      <h1 class="judul_besar">Deteksi Penyakit</h1>
+      <p class="sub_judul2">Silahkan masukkan gambar daun mangga</p>
+    </div>
+  <div class="search_section layout_padding3">
+
+      <form action = "/hasil" method ="post" enctype="multipart/form-data">
+        <div class="file-upload">
+          <div class="image-upload-wrap">
+            <input class="file-upload-input" id="uploadFile" type='file' name="file" onchange="readURL(this);" accept="image/*" required/>
+            <div class="drag-text" onclick="$('.file-upload-input').trigger( 'click' )" >
+              <h3>Tambahkan Gambar ...</h3>
+            </div>
+          </div>
+          <div class="file-upload-content">
+            <img class="file-upload-image" src="#" alt="your image" />
+            <div class="image-title-wrap">
+              <span class="image-title">Uploaded Image</span>
+            </div>
+            <button type="button" onclick="removeUpload()" class="remove-image">Hapus</button>
+          </div>
+        </div>
+          <button class="btn btn-secondary" type="button" onclick="$('.file-upload-input').trigger( 'click' )" style="margin-top: 20px" 
+          id="uploadBtn">Unggah Gambar</button>
+          <input type ="submit" class="btn btn-success" value="Prediksi" style="margin-top: 20px">
+      </form>
+      
+</div>
+</section>
+
+<script>
+document.getElementById("uploadBtn").onchange = function () {
+  document.getElementById("uploadFile").value = this.value;
+};
+</script>
+  <!-- search end-->
+
+  
+ <div class="marketing_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="job_section">
+              <h1 class="jobs_text">Penyakit Tanaman Mangga</h1>
+              <p class="dummy_text">Beberapa jenis penyakit yang menyerang pada daun mangga antara lain:<br><br>
+              1. Kutu Putih <br>
+              2. Embun Jelaga <br>
+              3. Antraknosa <br>
+              4. Gloeosporium <br>
+              </p></p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="image_1 padding_3"><img src="../public/images/sakit.png" width="570"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="services_section_2 layout_padding">
+    <div class="container">
+      <h1 class="companies_text3">Gejala atau Ciri-Ciri Penyakit</h1>
+    </div>
+</div>
+
+<div class="container">
+  <div class="tab">
+    <button class="tablinks" onclick="jenis(event, 'antraknosa')" id="defaultOpen">Antraknosa</button>
+    <button class="tablinks" onclick="jenis(event, 'embun_jelaga')">Embun Jelaga</button>
+    <button class="tablinks" onclick="jenis(event, 'gloesporium')">Gloesporium</button>
+    <button class="tablinks" onclick="jenis(event, 'kutu_putih')">Kutu Putih</button>
+  </div>
+
+  <div id="antraknosa" class="tabcontent">
+    <div class="row">
+        <div class="col-md-6">
+          <div class="job_section1">
+            <h3 class="jobs_text2">1. Antraknosa</h3>
+            <p class="dummy_text">• Adanya bercak-bercak kecil pada daun yang kemudian akan berkembang menjadi bercak-bercak besar yang berwarna cokelat atau hitam.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+            <div class="image_3 padding_2"><img src="../public/images/Antraknosa.jpg" style="width: 250px; height: 250px; border-radius: 50em"></div>
+          </div>
+    </div>
+  </div>
+
+  <div id="embun_jelaga" class="tabcontent">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="job_section1">
+                <h1 class="jobs_text2">2. Embun Jelaga</h1>
+                <p class="dummy_text">• Adanya Lapisan warna hitam dan lengket, yang menutupi permukaan daun mangga akibat adanya Jamur Capnodium sp.. </p>
+            </div>
+          </div>
+        <div class="col-md-6">
+            <div class="image_3 padding_2"><img src="../public/images/embun_jelaga.jpg" style="width: 250px; height: 250px; border-radius: 50em"></div>
+        </div>
+    </div>
+  </div>
+
+  <div id="gloesporium" class="tabcontent">
+    <div class="row">
+      <div class="col-md-6">
+          <div class="job_section1">
+                <h1 class="jobs_text2">3. Gloesporium</h1>
+                <p class="dummy_text">• Daunnya menghitam & menggulung hingga berlubang.
+                </p>
+          </div>
+      </div>
+      <div class="col-md-6">
+        <div class="image_3 padding_2"><img src="../public/images/glosperium2.jpg" style="width: 250px; height: 250px; border-radius: 50em"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="kutu_putih" class="tabcontent">
+    <div class="row">
+      <div class="col-md-6">
+          <div class="job_section1">
+                <h1 class="jobs_text2">4. Kutu Putih</h1>
+                <p class="dummy_text">• Adanya gumpalan benang lilin berwarna putih yang banyak di atas permukaan daun atau di bawah permukaan daun, sehingga membuat permukaan daun menjadi seperti keputihan</p>
+          </div>
+      </div>
+      <div class="col-md-6">
+        <div class="image_3 padding_2"><img src="../public/images/kutu_putih.jpg" style="width: 250px; height: 250px; border-radius: 50em"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <!-- footer section start-->
+  <div class="footer">
+    <div class="container">
+      <div class="row" style="font-weight: bold">
+        <div class="col-3 col-md-3" style="text-align: center;">
+          <p class="footer_text">Abid Tondi Nugraha</a></p>
+        </div>
+        <div class="col-3 col-md-3" style="text-align: center;">
+          <p class="footer_text">191401001</p>
+        </div>
+        <div class="col-3 col-md-4" style="text-align: center;">
+          <p class="footer_text">Ilmu Komputer, Universitas Sumatera Utara</p>
+        </div>
+        <div class="col-3 col-md-2" style="text-align: center;">
+          <p class="footer_text">2023</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer section end-->
+
+  <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script type="text/javascript" src="../public/js/upload.js"></script>
+</body>
+</html>
